@@ -12,16 +12,16 @@ function dragonOfLoowater(dragonHead, knightHeight) {
         }
     }
     if(killer.length === dragonHead.length){
-        console.log(minSum)
+        return minSum
     }else{
-        console.log('knight fall')
+        return 'knight fall'
     }
-    
-    // console.log(minSum)
 }
 
-dragonOfLoowater([5, 4], [7, 8, 4])    // 11
-dragonOfLoowater([5, 10], [5])         // knight fall
-dragonOfLoowater([7, 2], [4, 3, 1, 2]) // knight fall
-dragonOfLoowater([7, 2], [2, 1, 8, 5]) // 10
+
+module.exports = dragonOfLoowater
+// dragonOfLoowater([5, 4], [7, 8, 4])    // 11
+// dragonOfLoowater([5, 10], [5])         // knight fall
+// dragonOfLoowater([7, 2], [4, 3, 1, 2]) // knight fall
+// dragonOfLoowater([7, 2], [2, 1, 8, 5]) // 10
 
